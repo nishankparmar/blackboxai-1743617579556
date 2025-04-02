@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FestivePix - Automated Festival Images for Pune Businesses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Header Partial -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-camera-retro text-2xl text-blue-500"></i>
+        <h1 class="text-xl font-bold text-gray-800">FestivePix</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#how-it-works" class="text-gray-600 hover:text-blue-500">How It Works</a>
+        <a href="#gallery" class="text-gray-600 hover:text-blue-500">Gallery</a>
+        <a href="#pricing" class="text-gray-600 hover:text-blue-500">Pricing</a>
+        <a href="#testimonials" class="text-gray-600 hover:text-blue-500">Testimonials</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="px-4 py-2 text-sm font-medium text-blue-500 border border-blue-500 rounded-md hover:bg-blue-50">
+          Login
+        </button>
+        <button class="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600">
+          Sign Up Free
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 bg-gradient-to-r from-blue-50 to-purple-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          Professional festival greetings for your business in 2 minutes
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+          Upload your details once, get branded images automatically for every festival
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+          <button class="px-6 py-3 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition">
+            Start Free Trial (First Image Free)
+          </button>
+          <button class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-50 transition">
+            See How It Works
+          </button>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <div class="relative">
+          <img src="https://images.pexels.com/photos/1591730/pexels-photo-1591730.jpeg" 
+               alt="Before/After Example" 
+               class="rounded-lg shadow-xl w-full h-auto">
+          <div class="absolute -bottom-4 -right-4 bg-white px-4 py-2 rounded-lg shadow-md">
+            <span class="text-sm font-medium text-gray-700">Before</span>
+            <span class="mx-2 text-gray-400">→</span>
+            <span class="text-sm font-medium text-blue-500">After</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp my-3"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
