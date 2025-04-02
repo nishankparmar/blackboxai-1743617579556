@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - FestivePix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-camera-retro text-2xl text-blue-500"></i>
+        <h1 class="text-xl font-bold text-gray-800">FestivePix</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+        <a href="how-it-works.html" class="text-gray-600 hover:text-blue-500">How It Works</a>
+        <a href="gallery.html" class="text-blue-500 font-medium">Gallery</a>
+        <a href="pricing.html" class="text-gray-600 hover:text-blue-500">Pricing</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="px-4 py-2 text-sm font-medium text-blue-500 border border-blue-500 rounded-md hover:bg-blue-50">
+          Login
+        </button>
+        <button class="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600">
+          Sign Up Free
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Festival Designs</h2>
+      
+      <!-- Filter Controls -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded-md">All</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Diwali</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Holi</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Ganesh Chaturthi</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Republic Day</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Independence Day</button>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">All Businesses</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Retail</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Food</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">Services</button>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Diwali Example 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/3761507/pexels-photo-3761507.jpeg" 
+               alt="Diwali Design for Retail" 
+               class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Diwali</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Retail</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Festive Discounts</h3>
+            <p class="text-gray-600 text-sm">Perfect for shops announcing seasonal offers</p>
+          </div>
+        </div>
+
+        <!-- Ganesh Chaturthi Example -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/10113354/pexels-photo-10113354.jpeg" 
+               alt="Ganesh Chaturthi Design" 
+               class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Ganesh Chaturthi</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">All Businesses</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Ganpati Bappa Morya</h3>
+            <p class="text-gray-600 text-sm">Traditional greeting with your branding</p>
+          </div>
+        </div>
+
+        <!-- Republic Day Example -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg" 
+               alt="Republic Day Design" 
+               class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Republic Day</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Services</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Patriotic Greetings</h3>
+            <p class="text-gray-600 text-sm">Show your national pride with your branding</p>
+          </div>
+        </div>
+
+        <!-- Holi Example -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/1391581/pexels-photo-1391581.jpeg" 
+               alt="Holi Design" 
+               class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Holi</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Food</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Colorful Festival Wishes</h3>
+            <p class="text-gray-600 text-sm">Vibrant designs for restaurants and caterers</p>
+          </div>
+        </div>
+
+        <!-- Independence Day Example -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/36703/flag-india-indian-national.jpg" 
+               alt="Independence Day Design" 
+               class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Independence Day</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">All Businesses</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Freedom Celebration</h3>
+            <p class="text-gray-600 text-sm">Patriotic designs with your branding</p>
+          </div>
+        </div>
+
+        <!-- Diwali Example 2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg" 
+               alt="Diwali Design for Services" 
+               class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Diwali</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Services</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Professional Festival Wishes</h3>
+            <p class="text-gray-600 text-sm">Elegant designs for service businesses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 bg-blue-50">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-2xl font-semibold mb-4">Want to See Your Brand in These Designs?</h3>
+      <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+        Get started with your free trial image today.
+      </p>
+      <button class="px-8 py-3 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition">
+        Start Free Trial
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer (same as how-it-works.html) -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-lg font-semibold mb-4">FestivePix</h4>
+          <p class="text-gray-400">Automated festival images for Pune businesses.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+            <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-phone-alt text-gray-400"></i>
+              <span class="text-gray-400">+91 98765 43210</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-envelope text-gray-400"></i>
+              <span class="text-gray-400">hello@festivepix.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2023 FestivePix. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
