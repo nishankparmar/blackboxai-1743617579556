@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - FestivePix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-camera-retro text-2xl text-blue-500"></i>
+        <h1 class="text-xl font-bold text-gray-800">FestivePix</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+        <a href="how-it-works.html" class="text-gray-600 hover:text-blue-500">How It Works</a>
+        <a href="gallery.html" class="text-gray-600 hover:text-blue-500">Gallery</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <div class="relative group">
+          <button class="flex items-center space-x-1">
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" 
+                 alt="User" 
+                 class="w-8 h-8 rounded-full object-cover">
+            <span class="hidden md:inline text-sm font-medium">My Account</span>
+            <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+          </button>
+          <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden group-hover:block">
+            <a href="profile.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+            <a href="auth/login.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="py-8">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Sidebar -->
+        <div class="md:w-1/4">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex flex-col items-center mb-6">
+              <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" 
+                   alt="Profile" 
+                   class="w-24 h-24 rounded-full object-cover mb-4">
+              <h3 class="font-semibold text-lg">Patil Kirana Store</h3>
+              <p class="text-sm text-gray-500">Kothrud, Pune</p>
+            </div>
+            
+            <nav class="space-y-2">
+              <a href="#" class="block px-4 py-2 bg-blue-50 text-blue-600 rounded-md font-medium">
+                <i class="fas fa-user-circle mr-2"></i> Profile
+              </a>
+              <a href="#" class="block px-4 py-2 text-gray-600 rounded-md hover:bg-gray-100">
+                <i class="fas fa-image mr-2"></i> My Designs
+              </a>
+              <a href="#" class="block px-4 py-2 text-gray-600 rounded-md hover:bg-gray-100">
+                <i class="fas fa-calendar-alt mr-2"></i> Upcoming Festivals
+              </a>
+              <a href="#" class="block px-4 py-2 text-gray-600 rounded-md hover:bg-gray-100">
+                <i class="fas fa-rupee-sign mr-2"></i> Subscription
+              </a>
+              <a href="#" class="block px-4 py-2 text-gray-600 rounded-md hover:bg-gray-100">
+                <i class="fas fa-cog mr-2"></i> Settings
+              </a>
+            </nav>
+          </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="md:w-3/4">
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-xl font-bold text-gray-800">Profile Information</h2>
+              <button class="px-4 py-2 text-sm font-medium text-blue-500 border border-blue-500 rounded-md hover:bg-blue-50">
+                Edit Profile
+              </button>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Business Name</h3>
+                <p class="text-gray-800">Patil Kirana Store</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Business Type</h3>
+                <p class="text-gray-800">Retail Shop</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Phone Number</h3>
+                <p class="text-gray-800">+91 9876543210</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Email</h3>
+                <p class="text-gray-800">patil.kirana@example.com</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Address</h3>
+                <p class="text-gray-800">Shop No. 5, Kothrud Main Road, Pune - 411038</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Member Since</h3>
+                <p class="text-gray-800">15 October 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Subscription Card -->
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-xl font-bold text-gray-800">Subscription</h2>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Active</span>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Plan</h3>
+                <p class="text-gray-800">Annual Subscription</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Price</h3>
+                <p class="text-gray-800">₹1,500/year</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Renewal Date</h3>
+                <p class="text-gray-800">14 October 2023</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Payment Method</h3>
+                <p class="text-gray-800">UPI (PhonePe)</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-3">
+              <button class="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600">
+                Upgrade Plan
+              </button>
+              <button class="px-4 py-2 text-sm font-medium text-red-500 border border-red-500 rounded-md hover:bg-red-50">
+                Cancel Subscription
+              </button>
+            </div>
+          </div>
+          
+          <!-- Recent Designs -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">Recent Designs</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="border border-gray-200 rounded-md overflow-hidden">
+                <img src="https://images.pexels.com/photos/3761507/pexels-photo-3761507.jpeg" 
+                     alt="Diwali Design" 
+                     class="w-full h-32 object-cover">
+                <div class="p-3">
+                  <p class="text-sm font-medium">Diwali 2022</p>
+                  <p class="text-xs text-gray-500">25 October 2022</p>
+                </div>
+              </div>
+              <div class="border border-gray-200 rounded-md overflow-hidden">
+                <img src="https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg" 
+                     alt="Republic Day Design" 
+                     class="w-full h-32 object-cover">
+                <div class="p-3">
+                  <p class="text-sm font-medium">Republic Day 2023</p>
+                  <p class="text-xs text-gray-500">25 January 2023</p>
+                </div>
+              </div>
+              <div class="border border-gray-200 rounded-md overflow-hidden">
+                <img src="https://images.pexels.com/photos/1391581/pexels-photo-1391581.jpeg" 
+                     alt="Holi Design" 
+                     class="w-full h-32 object-cover">
+                <div class="p-3">
+                  <p class="text-sm font-medium">Holi 2023</p>
+                  <p class="text-xs text-gray-500">8 March 2023</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+              <a href="#" class="text-blue-500 hover:underline font-medium">View All Designs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-lg font-semibold mb-4">FestivePix</h4>
+          <p class="text-gray-400">Automated festival images for Pune businesses.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+            <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+            <li><a href="customer-stories.html" class="text-gray-400 hover:text-white">Customer Stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-phone-alt text-gray-400"></i>
+              <span class="text-gray-400">+91 98765 43210</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-envelope text-gray-400"></i>
+              <span class="text-gray-400">hello@festivepix.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2023 FestivePix. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
